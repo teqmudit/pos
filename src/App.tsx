@@ -6,6 +6,7 @@ import { ProtectedRoute } from './components/ProtectedRoute'
 
 // Pages
 import LoginPage from './pages/LoginPage'
+import SignUpPage from './pages/SignUpPage'
 import SetupPage from './pages/SetupPage'
 import DashboardPage from './pages/DashboardPage'
 import SuperAdminDashboard from './pages/SuperAdminDashboard'
@@ -23,6 +24,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
           <Route 
             path="/setup" 
             element={
