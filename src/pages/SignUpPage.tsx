@@ -193,7 +193,7 @@ export default function SignUpPage() {
             account_number: formData.bankAccountNumber,
             routing_number: formData.ifscCode,
           },
-          golf_courses: formData.selectedGolfCourses
+          golf_courses: formData.selectedGolfCourses,
           business_profile: {
             name: formData.kitchenName,
             support_email: formData.billingEmail,
