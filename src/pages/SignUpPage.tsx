@@ -638,6 +638,15 @@ export default function SignUpPage() {
                 Sign in here
               </button>
             </p>
+            <p className="text-sm text-gray-600 mt-2">
+              Want to see our plans?{' '}
+              <button
+                onClick={() => navigate('/pricing')}
+                className="text-primary-600 hover:text-primary-700 font-medium"
+              >
+                View Pricing
+              </button>
+            </p>
           </div>
         )}
       </div>

@@ -14,6 +14,7 @@ import {
 } from 'lucide-react'
 import LoadingSpinner from '../components/LoadingSpinner'
 import { format, startOfDay, endOfDay, subDays } from 'date-fns'
+import SubscriptionStatus from '../components/SubscriptionStatus'
 
 interface DashboardStats {
   totalSales: number
@@ -151,6 +152,11 @@ export default function DashboardPage() {
   return (
     <Layout>
       <div className="space-y-6">
+        {/* Subscription Status - Only for Kitchen Owners */}
+        {user?.role === 'kitchen_owner' && (
+          <SubscriptionStatus />
+        )}
+
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="card hover-lift">

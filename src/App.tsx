@@ -17,6 +17,7 @@ import CustomerManagement from './pages/CustomerManagement'
 import BarcodeManagement from './pages/BarcodeManagement'
 import BusinessHours from './pages/BusinessHours'
 import ReportsPage from './pages/ReportsPage'
+import PricingPage from './pages/PricingPage'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route 
             path="/setup" 
             element={
